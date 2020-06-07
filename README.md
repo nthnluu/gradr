@@ -93,9 +93,9 @@ questionOne.Score(360);
 ### Assignments
 Once you have created your items, you can bundle them together into an `Assignment`:
 ```
-const questionOne = new Question('How many days are in a year?', 365);
-const questionTwo = new Question('What is the capital of the US?', 'Washington DC');
-const questionThree = new Question('What is the derivative of a constant?', 0);
+const questionOne = new Item('How many days are in a year?', 365);
+const questionTwo = new Item('What is the capital of the US?', 'Washington DC');
+const questionThree = new Item('What is the derivative of a constant?', 0);
 
 // Usage: Assignment([items])
 const assignment = new Assignment([questionOne, questionTwo, questionThree]);
