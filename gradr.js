@@ -22,7 +22,7 @@ class Item {
 
     // check if the input is the correct answer
     Score(input) {
-        return this.answer.includes(input);
+        return this.answer === input;
     }
 }
 
@@ -43,7 +43,7 @@ class Stats {
         });
         if (correct) {
             this.score = this.score + Item.pointValue;
-            this.percentage = calculatePercentage(this.score, this.possiblePoints);
+            this.percentage = calculatePercent(this.score, this.possiblePoints);
         } else {
             if (this.score === 0 || this.score < Item.pointValue) {
                 return;
@@ -71,3 +71,12 @@ class Assignment {
         }
     }
 }
+
+const questionOne = new Item('How many days are in a year?', 365, 10);
+const questionTwo = new Item('What is the capital of the US?', 'Washington DC', 10);
+const questionThree = new Item('What is the derivative of a constant?', 0, 10);
+const assignment = new Assignment([questionOne, questionTwo, questionThree]);
+
+assignment.Answer(questionOne, 365)
+console.log(JSON.stringify(assignment));
+

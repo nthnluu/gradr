@@ -4,6 +4,6 @@
     "description": "An elegant JavaScript library for creating and scoring assesments.",
     "author": "Nathan J Luu <nthnluu@outlook.com>",
     "main": "gradr.js",
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
 
