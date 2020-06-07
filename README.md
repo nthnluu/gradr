@@ -3,7 +3,7 @@
  <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Gradius.js</h3>
+<h3 align="center">Gradr.js</h3>
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 
 ---
 
-<p align="center"> A simple and elegant library for creating and scoring assesments.
+<p align="center"> A simple and elegant library for creating and scoring assignments and exams.
     <br> 
 </p>
 
