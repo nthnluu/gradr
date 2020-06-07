@@ -100,7 +100,26 @@ const questionThree = new Item('What is the derivative of a constant?', 0);
 // Usage: Assignment([items])
 const assignment = new Assignment([questionOne, questionTwo, questionThree]);
 ```
-
+Now that we initialized our assignment, we can update it by using the `Answer()` method:
+```
+assignment.Answer(questionOne, 365)
+//returns true or false depending on the correctness of the provided input.
+```
+The `Answer()` method not only checks if the provided input is correct, it also updates the `Assignment` object's `stats`:
+```
+console.log(assignment);
+// returns
+// [{  
+//     ...
+//     stats: {
+//         score: 10,
+//         possiblePoints: 30,
+//         percentage: 33.33333333333333,
+//         responses: [[Object]]
+//     }
+// }]
+```
+You can take a look at the documentation to see all of the properties that are contained within the `Assignment` object.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 TODO
