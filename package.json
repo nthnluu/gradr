@@ -1,10 +1,16 @@
 {
     "name": "gradr",
     "scripts": {
-        "build": "node gradr.js"
+        "build": "babel src -d lib",
+        "run": "node src/gradr.js"
     },
     "description": "An elegant JavaScript library for creating and scoring assesments.",
     "author": "Nathan J Luu <nthnluu@outlook.com>",
-    "main": "gradr.js",
-    "version": "1.0.3"
+    "main": "src/gradr.js",
+    "version": "1.0.3",
+    "devDependencies": {
+        "@babel/cli": "^7.10.1",
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2"
+    }
 }
