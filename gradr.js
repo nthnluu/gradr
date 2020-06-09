@@ -13,7 +13,7 @@ function calculateTotalPoints(items) {
     return totalPoints;
 }
 
-class Item {
+export class Item {
     constructor(question, answer, pointValue) {
         this.question = question;
         this.answer = answer;
@@ -55,7 +55,7 @@ class Stats {
     }
 }
 
-class Assignment {
+export class Assignment {
     constructor(items) {
         this.items = items;
         this.stats = new Stats(this.items);
@@ -72,11 +72,11 @@ class Assignment {
     }
 }
 
-const questionOne = new Item('How many days are in a year?', 365, 10);
-const questionTwo = new Item('What is the capital of the US?', 'Washington DC', 10);
-const questionThree = new Item('What is the derivative of a constant?', 0, 10);
-const assignment = new Assignment([questionOne, questionTwo, questionThree]);
-
-assignment.Answer(questionOne, 365)
-console.log(JSON.stringify(assignment));
+// const questionOne = new Item('How many days are in a year?', 365, 10);
+// const questionTwo = new Item('What is the capital of the US?', 'Washington DC', 10);
+// const questionThree = new Item('What is the derivative of a constant?', 0, 10);
+// const assignment = new Assignment([questionOne, questionTwo, questionThree]);
+//
+// assignment.Answer(questionOne, 365)
+// console.log(JSON.stringify(assignment));
 
