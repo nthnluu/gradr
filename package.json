@@ -1,9 +1,10 @@
 {
     "name": "gradr",
-    "scripts": { "build": "node gradr.js"},
+    "scripts": {
+        "build": "node gradr.js"
+    },
     "description": "An elegant JavaScript library for creating and scoring assesments.",
     "author": "Nathan J Luu <nthnluu@outlook.com>",
     "main": "gradr.js",
-    "version": "1.0.1"
+    "version": "1.0.3"
 }
-
